@@ -1,9 +1,9 @@
 ---
-name: tax-compliance-checker
+name: tax-skill
 description: "Use this skill when a user wants an AI agent to check small-business, one-person-company, contractor, ecommerce, or startup tax compliance status: filing deadlines, official tax portal tasks, reminders, risk notices, evidence records, or a repeatable tax-check workflow. The skill verifies official sources, guides user login/QR/app handoff, inspects pending items, and produces audit-style reports. It must not provide tax/legal/accounting advice, submit filings, make payments, amend returns, acknowledge risk notices, or change taxpayer/account data without explicit user confirmation."
 ---
 
-# Tax Compliance Checker
+# Tax Skill
 
 Use this skill to run a source-backed, human-in-the-loop tax compliance check. Treat the agent as an operations assistant for deadlines, official portals, evidence, and handoffs, not as a tax adviser or autonomous filer.
 

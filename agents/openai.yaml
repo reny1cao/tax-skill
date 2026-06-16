@@ -1,4 +1,4 @@
 interface:
-  display_name: "Tax Compliance Checker"
+  display_name: "Tax Skill"
   short_description: "Check tax deadlines, portals, evidence safely"
-  default_prompt: "Use $tax-compliance-checker to check my small-business tax deadlines and official portal tasks safely."
+  default_prompt: "Use $tax-skill to check my small-business tax deadlines and official portal tasks safely."
