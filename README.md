@@ -6,7 +6,9 @@
 
 ## 中文
 
-`tax-skill` 是一个给 Codex 使用的税务运营检查 skill。它帮助一人公司、小微企业、独立开发者、跨境电商卖家检查税务 deadline、官方门户待办、风险提醒和证据记录。
+`tax-skill` 是一个给 AI agent 使用的税务运营检查 skill。它帮助一人公司、小微企业、独立开发者、跨境电商卖家检查税务 deadline、官方门户待办、风险提醒和证据记录。
+
+这个 repo 目前采用 Codex-compatible skill 结构打包，但定位不是只给 Codex 用。任何能读取 `SKILL.md`、`references/` 和 `scripts/` 的 agent runtime 都可以复用这套 workflow。
 
 它不是自动报税工具，也不是税务建议工具。它的边界是：查官方来源、引导登录、读取状态、整理证据、在高风险动作前停下来。
 
@@ -40,11 +42,13 @@
 
 ### 安装
 
-把 repo clone 到 Codex skills 目录：
+如果你使用 Codex，把 repo clone 到 Codex skills 目录：
 
 ```bash
 git clone https://github.com/reny1cao/tax-skill.git "${CODEX_HOME:-$HOME/.codex}/skills/tax-skill"
 ```
+
+如果你使用其它 agent runtime，把 repo clone 到该 runtime 的 skill/tool/workflow 目录，并让 agent 读取 `SKILL.md` 作为入口。
 
 如果已经安装过：
 
@@ -54,7 +58,7 @@ git -C "${CODEX_HOME:-$HOME/.codex}/skills/tax-skill" pull
 
 ### 使用
 
-在 Codex 里直接调用：
+在支持 skills 的 agent 环境里调用，例如：
 
 ```text
 Use $tax-skill to check whether my small business has any tax tasks this month.
@@ -185,7 +189,9 @@ tax-skill/
 
 ## English
 
-`tax-skill` is a Codex skill for tax operations checks. It helps one-person companies, small businesses, indie builders, contractors, and ecommerce sellers check filing deadlines, official portal tasks, risk notices, and evidence records.
+`tax-skill` is an AI-agent skill for tax operations checks. It helps one-person companies, small businesses, indie builders, contractors, and ecommerce sellers check filing deadlines, official portal tasks, risk notices, and evidence records.
+
+This repo is currently packaged in a Codex-compatible skill structure, but it is not meant only for Codex. Any agent runtime that can read `SKILL.md`, `references/`, and `scripts/` can reuse this workflow.
 
 It is not an auto-filing tool and it does not provide tax advice. Its job is to verify official sources, guide login handoffs, inspect status, collect evidence, and stop before high-risk actions.
 
@@ -219,11 +225,13 @@ Other jurisdictions, tax types, non-zero filings, complex income/cost/deduction 
 
 ### Install
 
-Clone the repo into your Codex skills directory:
+If you use Codex, clone the repo into your Codex skills directory:
 
 ```bash
 git clone https://github.com/reny1cao/tax-skill.git "${CODEX_HOME:-$HOME/.codex}/skills/tax-skill"
 ```
+
+If you use another agent runtime, clone this repo into that runtime's skill, tool, or workflow directory and use `SKILL.md` as the entrypoint.
 
 If already installed:
 
@@ -233,7 +241,7 @@ git -C "${CODEX_HOME:-$HOME/.codex}/skills/tax-skill" pull
 
 ### Usage
 
-Call it from Codex:
+Call it from a skill-aware agent environment, for example:
 
 ```text
 Use $tax-skill to check whether my small business has any tax tasks this month.
