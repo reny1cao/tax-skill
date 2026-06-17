@@ -166,6 +166,7 @@ tax-skill/
 ### 参考文档
 
 - [`SKILL.md`](SKILL.md): skill 入口和核心协议
+- [`references/tax-health-check.md`](references/tax-health-check.md): 税务状态体检专业检查框架
 - [`references/workflow.md`](references/workflow.md): 完整检查流程
 - [`references/official-source-checks.md`](references/official-source-checks.md): 官方来源和门户校验规则
 - [`references/output-templates.md`](references/output-templates.md): 检查报告模板
@@ -349,6 +350,7 @@ tax-skill/
 ### References
 
 - [`SKILL.md`](SKILL.md): skill entrypoint and core protocol
+- [`references/tax-health-check.md`](references/tax-health-check.md): professional tax health-check framework
 - [`references/workflow.md`](references/workflow.md): full check workflow
 - [`references/official-source-checks.md`](references/official-source-checks.md): official-source and portal verification rules
 - [`references/output-templates.md`](references/output-templates.md): report templates

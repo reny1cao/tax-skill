@@ -53,6 +53,7 @@ Read `references/safety-boundaries.md` before any request that touches these act
 
 ## References
 
+- Tax health-check professional workflow: `references/tax-health-check.md`
 - Full workflow: `references/workflow.md`
 - Local/private profile schema: `references/config-schema.md`
 - Official-source and portal verification: `references/official-source-checks.md`
